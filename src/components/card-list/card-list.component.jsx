@@ -3,12 +3,11 @@ import Card from '../card/card.component';
 import './card-list.styles.css'
 
 class CardList extends Component {
-  render () {
-    console.log(this.props)
+  render() {
     return (
       <div className='card-list'>
         {
-          this.props.monsters.map( (monster) => {
+          this.props.monsters.map((monster, i) => {
             return (
               <Card monster={monster} />
             )
